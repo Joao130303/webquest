@@ -1,0 +1,398 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebQuest - Cálculo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+
+        .navbar {
+            background-color: #161b22;
+        }
+
+        .card {
+            background-color: #21262d;
+            color: #c9d1d9;
+        }
+
+        footer {
+            background-color: #161b22;
+            color: #8b949e;
+            padding: 1rem 0;
+        }
+
+        .bd-placeholder-img {
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">WebQuest Cálculo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pCalculo.html">Pré-Cálculo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calculo.html">Cálculo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matApoio.html">Material de Apoio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreCalc.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+                aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./OQ3OWB0.jpg" class="d-block w-100" alt="Pré-Cálculo"
+                    style="height: 50vh; object-fit: cover;">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Pré-Cálculo</h1>
+                        <p class="opacity-75">Tenha uma boa base, para iniciar em calculo!</p>
+                        <p><a class="btn btn-lg btn-primary" href="pCalculo.html">Pré-Cálculo</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./OQ3OWB0.jpg" class="d-block w-100" alt="Cálculo" style="height: 50vh; object-fit: cover;">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Cálculo</h1>
+                        <p>Aprenda mais sobre Derivadas e Integrais!</p>
+                        <p><a class="btn btn-lg btn-primary" href="calculo.html">Cálculo</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./OQ3OWB0.jpg" class="d-block w-100" alt="Materiais de Apoio"
+                    style="height: 50vh; object-fit: cover;">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>Materiais de Apoio</h1>
+                        <p>Esta tendo dificuldaddes? Acesse estes materiais de apoio!</p>
+                        <p><a class="btn btn-lg btn-primary" href="matApoio.html">Materiais de Apoio</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <main class="container my-5">
+        <div class="text-center">
+            <h1>WebQuest Cálculo</h1>
+            <p>
+                Esta página foi desenvolvida como parte de uma atividade complementar da disciplina de Cálculo, sob a
+                orientação do
+                professor Luciano Condori. Ela busca reunir os conceitos mais relevantes da matéria para facilitar o
+                aprendizado e
+                apoiar estudantes que desejam superar os desafios dessa área tão importante para diversas profissões.
+            </p>
+        </div>
+        <hr class="featurette-divider my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Coluna do texto -->
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Obejtivos do WebQuest</h2>
+                    <p class="lead">
+                        Ajudar os alunos a compreenderem os conceitos de Cálculo de forma mais clara e prática<br><br>
+
+                        Reforçar os conteúdos aprendidos em sala de aula através de materiais complementares<br><br>
+
+                        Criar uma ferramenta acessível que apoie o estudo autônomo e colaborativo
+                    </p>
+                </div>
+                <!-- Coluna da imagem -->
+                <div class="col-md-5">
+                    <img src="./8084.jpg" alt="Calculo 1.1" class="img-fluid"
+                        style="width: 100%; object-fit: cover; height: 100%;">
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr class="featurette-divider my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Coluna da imagem -->
+                <div class="col-md-5">
+                    <img src="./4542742.jpg" alt="Calculo 1.2" class="img-fluid"
+                        style="width: 100%; object-fit: cover; height: 100%;">
+                </div>
+                <!-- Coluna do texto -->
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Introdução á Calculo
+                    </h2>
+                    <p class="lead">
+                        O cálculo diferencial e integral é uma área central da matemática que estuda mudanças e
+                        acumulações. O cálculo
+                        diferencial foca nas taxas de variação de funções, com a derivada indicando como uma função muda
+                        em relação às suas
+                        variáveis.<br><br>
+
+                        Já o cálculo integral lida com o conceito de soma acumulada, como calcular áreas sob curvas ou
+                        volumes de sólidos. Ambas
+                        as áreas estão relacionadas pela Regra Fundamental do Cálculo, que afirma que a derivada e a
+                        integral são operações
+                        inversas.<br><br>
+
+                        Essas ferramentas são essenciais para entender e resolver problemas em diversas áreas, como
+                        física, economia e
+                        engenharia.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Coluna do texto -->
+                <div class="col-md-12">
+                    <h2 class="featurette-heading">Historia de Calculo</h2>
+                    <p class="lead">
+                        A expressão "Cálculo" é uma forma simplificada adotada pelos matemáticos para se referirem à
+                        ferramenta matemática usada
+                        para analisar, de maneira qualitativa ou quantitativa, as variações que ocorrem em fenômenos com
+                        componentes de natureza
+                        física. Quando surgiu, no século XVII, o Cálculo tinha como objetivo resolver quatro tipos
+                        principais de problemas
+                        científicos e matemáticos daquela época: <br><br>
+                        <list>
+                            <li>
+                                Determinação da reta tangente a uma curva, em um ponto específico dessa curva. <br><br>
+                            </li>
+
+                            <li>
+                                Determinação do comprimento de uma curva, da área de uma região e do volume de um
+                                sólido.
+                                <br><br>
+                            </li>
+
+                            <li>
+                                Determinação dos valores máximo e mínimo de uma quantidade — como, por exemplo, as
+                                distâncias
+                                máximas e mínimas de um
+                                corpo celeste a outro ou qual ângulo de lançamento proporciona o alcance máximo a um
+                                projétil.
+                                <br> <br>
+                            </li>
+
+                            <li>
+                                Conhecendo uma fórmula que descreve a distância percorrida por um corpo em um intervalo
+                                de
+                                tempo, determinar a sua
+                                velocidade e aceleração em cada instante ao longo desse intervalo. Reciprocamente, a
+                                partir de
+                                uma fórmula para a
+                                velocidade ou aceleração de um corpo, em qualquer instante, determinar a distância
+                                percorrida
+                                pelo corpo no intervalo de
+                                tempo correspondente. <br> <br>
+                            </li>
+
+                            <li>
+                                Esses problemas foram abordados por grandes cientistas do século XVII, mas o ápice
+                                desses
+                                esforços — a invenção (ou
+                                descoberta?) do Cálculo — é atribuído a Isaac Newton e Gottfried Wilhelm Leibniz. <br>
+                            </li>
+                        </list>
+                    </p>
+                </div>
+                <!-- Coluna da imagem -->
+                <div class="col-md-5">
+                    <img src="./10529155.jpg" alt="Calculo 1.3" class="img-fluid"
+                        style="width: 100%; object-fit: cover; height: 100%;">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Isaac Newton</h2>
+                    <p class="lead">
+                        Newton nasceu em Woolsthorpe, na Inglaterra. Em 1661, ingressou no Trinity College, em
+                        Cambridge, com deficiências em
+                        geometria. Foi graças à orientação do matemático Isaac Barrow que Newton se interessou pela
+                        matemática e pelas ciências
+                        em geral. Durante os anos de 1665 e 1666, Newton se refugiou em sua terra natal devido à peste
+                        negra em Londres. Nesse
+                        período, ele desenvolveu os fundamentos da ciência moderna: descobriu o Cálculo, reconheceu os
+                        princípios que regem o
+                        movimento dos corpos no sistema planetário, conjecturou a existência da força gravitacional e
+                        determinou que a luz
+                        branca é composta por todas as cores do espectro, do vermelho ao violeta. <br> <br>
+
+                        Em 1667, Newton retornou a Cambridge, onde obteve o grau de mestre e tornou-se professor no
+                        Trinity College. Dois anos
+                        depois, assumiu a cadeira de Barrow, e seu espírito criativo foi desperto. Nesse período,
+                        formulou a lei da gravidade,
+                        explicou os movimentos da lua, dos planetas e das marés, e desenvolveu as leis da ótica,
+                        termodinâmica e hidrodinâmica,
+                        além de projetar o primeiro telescópio moderno.
+                    </p>
+                </div>
+                <br><br>
+
+                <div class="col-md-7"><br><br>
+                    <h2 class="featurette-heading">Gottfried Wilhelm Leibniz</h2>
+                    <p class="lead">
+                        Leibniz nasceu em Leipzig, na Alemanha, e se destacou por sua maestria em diversas áreas do
+                        conhecimento, como Direito,
+                        Matemática, Filosofia, História e Literatura. Iniciou seus estudos superiores aos 15 anos, na
+                        Universidade de Leipzig,
+                        onde se formou em Direito. Aos 20 anos, doutorou-se em Direito pela Universidade de Altdorf.
+                        <br><br>
+
+                        Como diplomata, Leibniz teve a oportunidade de interagir com matemáticos e cientistas de vários
+                        países, que o
+                        incentivaram a continuar seu autodidatismo em Matemática, com destaque para o físico Christian
+                        Huygens. <br><br>
+
+                        Talvez uma das realizações mais notáveis compartilhadas por Leibniz e Newton tenha sido a
+                        invenção independente do
+                        Cálculo, embora com motivações e metodologias distintas. Hoje, é amplamente reconhecido que
+                        Leibniz desenvolveu o
+                        Cálculo cerca de 10 anos após Newton, mas seus resultados foram tornados públicos 20 anos antes.
+                        <br><br>
+
+                        Atualmente, os conceitos centrais do Cálculo são essenciais nas tarefas interdisciplinares de
+                        modelagem de fenômenos nas
+                        ciências exatas, naturais, biomédicas, sociais aplicadas e em áreas voltadas à geração de
+                        tecnologias.
+                    </p>
+                </div>
+                <div class="col-md-5"> <br><br>
+                    <img src="./gottfried.jpg" alt="Calculo 1.4" class="img-fluid"
+                        style="width: 100%; object-fit: cover; height: 100%;">
+                </div>
+                <br><br>
+                <div class="col-md-12">
+
+                    <p class="lead"><br>
+                        O Cálculo Diferencial e Integral, apesar de suas inovações revolucionárias, não foi imune a
+                        críticas durante o seu
+                        desenvolvimento. Embora Isaac Newton e Gottfried Wilhelm Leibniz tenham sido amplamente
+                        reconhecidos por suas
+                        contribuições fundamentais, muitos matemáticos e filósofos da época questionaram a validade e a
+                        fundamentação dos
+                        métodos que estavam sendo propostos. A falta de rigor formal e a introdução de conceitos
+                        abstratos, como os
+                        infinitesimais, geraram controvérsias que, em muitos casos, foram expressas de forma veemente
+                        por figuras proeminentes. <br><br>
+
+                        Entre os críticos mais notáveis estavam o matemático francês Michel Rolle e o filósofo e bispo
+                        anglicano George
+                        Berkeley, cujas objeções ao Cálculo ajudaram a destacar a necessidade de um maior aprofundamento
+                        teórico e uma base mais
+                        sólida para as novas ideias matemáticas. Embora suas críticas não tenham impedido o avanço do
+                        Cálculo, elas
+                        desempenharam um papel crucial na evolução da disciplina, direcionando os matemáticos a buscar
+                        uma fundamentação mais
+                        rigorosa e precisa para os métodos que haviam sido introduzidos.
+                    </p>
+                </div>
+                <div class="col-md-5"> <br><br>
+                    <img src="./michel.jpg" alt="Calculo 1.5" class="img-fluid"
+                        style="width: 100%; object-fit: cover; height: 100%;">
+                </div>
+                <div class="col-md-7"> <br><br>
+                    <h2 class="featurette-heading">Michel Rolle</h2>
+                    <p class="lead">
+                        Michel Rolle, matemático francês, foi um dos críticos mais contundentes dos métodos do Cálculo
+                        Diferencial e Integral
+                        que estavam sendo desenvolvidos por Isaac Newton e Gottfried Wilhelm Leibniz. Apesar de
+                        reconhecer a utilidade das
+                        ferramentas matemáticas criadas por esses cientistas, Rolle se opôs às novas abordagens do
+                        Cálculo, principalmente
+                        devido à falta de rigor formal que ele percebia nas suas fundamentações. <br><br>
+
+                        Ele acreditava que o Cálculo deveria ser mais bem estruturado e explicado em termos lógicos,
+                        algo que, para ele, estava
+                        ausente nas primeiras formulações de Newton e Leibniz. Apesar disso, suas críticas não impediram
+                        o avanço do Cálculo,
+                        mas serviram como um convite para que matemáticos posteriores buscassem uma base mais sólida e
+                        rigorosa para essas novas
+                        ideias.
+                    </p>
+                </div>
+                <div class="col-md-7"><br><br>
+                    <h2 class="featurette-heading">George Berkeley</h2>
+                    <p class="lead">
+                        George Berkeley, filósofo e bispo anglicano, também foi um crítico importante do Cálculo
+                        Diferencial e Integral,
+                        especialmente da teoria do "infinitesimal" que estava sendo usada por Newton e Leibniz. <br><br>
+                        Berkeley
+                        questionava a validade
+                        do conceito de "quantidades infinitesimais", que eram usadas no Cálculo para representar valores
+                        extremamente pequenos,
+                        mas que não tinham uma base matemática rigorosa na época. <br><br>
+                        Em sua obra The Analyst (1734), ele
+                        fez uma crítica feroz ao
+                        Cálculo, acusando os matemáticos de estarem usando uma "aritmética dos fantasma" ao lidar com os
+                        infinitesimais, que ele
+                        via como um conceito metafísico e sem fundamento lógico. Embora suas críticas tenham gerado
+                        controvérsia, elas
+                        destacaram a necessidade de maior rigor no desenvolvimento do Cálculo, o que mais tarde levou à
+                        formalização do conceito
+                        de limite e à construção de uma base sólida para o Cálculo.
+                    </p>
+                </div>
+                <div class="col-md-5"> <br><br>
+                    <img src="./george.jpg" alt="Calculo 1.6" class="img-fluid"
+                        style="width: 100%; object-fit: cover; height: 100%;">
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+
+
+    </main>
+    <footer class="text-center">
+        <p>&copy; 2025 WebQuest. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
